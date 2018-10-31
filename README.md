@@ -64,8 +64,8 @@ Just delete or add group members through 3Den! Keep in mind, that the slots (gro
 ### Loadouts
 You can find add*Loadout.sqf files in the "functions" folder. There you can add or change loadouts! If you add new roles, remember to add these in *Loadouts.sqf file!
 
-### Required mods
-In mission.sqm you can alter the number of mods and delete the unnecessary mods from the requirement list. You can find this list right on top of the file. Keep in mind, that the file starts to count from 0. So if you have 30 mods as requirement for example, you'll find mod 0 to 29 in the list! Also make sure to still have a correct numbering from 0 to x.
+### Mod dependency
+In mission.sqm you can change the number of mods and delete the unnecessary mods from the requirement list. You can find this list right on top of the file. Keep in mind, that the file starts to count from 0. So if you have 30 mods as requirement for example, you'll find mod 0 to 29 in the list! Also make sure to still have a correct numbering from 0 to x.
 
 # Available Maps
  * Rosche - https://steamcommunity.com/sharedfiles/filedetails/?id=1527410521
@@ -81,7 +81,7 @@ In mission.sqm you can alter the number of mods and delete the unnecessary mods 
  * NIArms - https://steamcommunity.com/sharedfiles/filedetails/?id=1208517358
  
  ### Our modset (ease of use usage for the templates)
-Please don't use our download server for a permanent use. We are fine to set you up with a working version of our own modset. If you are interested in using it for your own unit, please consider setting up a own repository through Arma3Sync or Swifty! If we encounter a huge jump in our down traffic, we are going to restrict this offer. So use it responsible for your own, and others, good!
+We don't offer this for  permanent use. We are fine to set you up with a working version of our own modset. If you are interested in using it for your own unit, please consider setting up an own repository through Arma3Sync or Swifty! If we encounter a huge jump in our upload traffic, we are going to restrict this offer. So use it responsibly for your own, and others, good!
  * ftp://10th-mntd.de/modset/.a3s/autoconfig
  
  

@@ -1,7 +1,7 @@
 # Introduction
 While creating some Zeus templates for my ARMA 3 unit (10th-mntd.de) I've asked myself why not to share the result and the mission files to the public so everyone can potentially benefit from it. 
-As a template for us it will depend on our modset. However the goal in mind is to just make a solid foundation and not place any mod related objects. So removing unused mods from the templates should just be easily done. Just keep in mind, that we are building our templates with ACEX headless clients in mind. We highly advice to keep them because it just improves ai, performance, and stability by a huge factor!
-Be advised that we actively develop these templates for our own needs mostly. Please see "How to change group names" for further customization towards your own needs.
+As a template for us it will depend on our modset. However the goal in mind is to just make a solid foundation and not place any mod related objects. So removing unused mods from the templates should just be easily done. Keep in mind, that we are building our templates with ACEX headless clients in mind. We highly advice to keep them because it just improves ai, performance, and stability by a huge factor!
+Be advised that we actively develop these templates for our own needs mostly. Please see "How to change things" for further customization towards your own needs.
 
 # Design philosophy
 Initially I wanted to build a template we can use to play Zeus missions on the map Rosche. From just two squads and a loadout box it quickly developed into a fully fledged, 84 players capable, mission template with a correct slot list and whatnot. This development were quickly adopted by our mission builders, because those templates delivered a solid foundation to build upon without the hour long hassle of setting up fireteams, squads and platoons. The template currently features:

@@ -4,10 +4,13 @@ As a template for us it will depend on our modset. However the goal in mind is t
 Be advised that we actively develop these templates for our own needs mostly. Please see "How to change things" for further customization towards your own needs.
 
 # Design philosophy
-Initially I wanted to build a template we can use to play Zeus missions on the map Rosche. From just two squads and a loadout box it quickly developed into a fully fledged, 84 players capable, mission template with a correct slot list and whatnot. This development were quickly adopted by our mission builders, because those templates delivered a solid foundation to build upon without the hour long hassle of setting up fireteams, squads and platoons. The template currently features:
+Initially I wanted to build a template we can use to play Zeus missions on the map Rosche. From just two squads and an ACE arsenal box it quickly developed into a fully fledged, 84 players capable, mission template with a correct slot list and whatnot. This development were quickly adopted by our mission builders, because those templates delivered a solid foundation to build upon without the hour long hassle of setting up fireteams, squads and platoons. The template currently features:
 
 ### "Why not just upload it to workshop?"
 The answer is simple: I am to lazy to host our own git repository on our server. Thus said I am a huge supporter of the free and open source movement. Also I've received so many support and good times over the last years since I've came into the ARMA series with ARMA 3 that it was time to give something back to this outstanding community!
+
+### Loadout customization
+While our players are (almost ;)) always disciplined we entrust them with unrestricted ACE arsenal access. Each and every loadout box is accessible through the ACE interaction menu attached to the box. 
 
 # Slotlist
 ### Platoon Leadership/HQ - Warrior 1
@@ -63,6 +66,9 @@ Just delete or add group members through 3Den! Keep in mind, that the slots (gro
 
 ### Loadouts
 You can find add*Loadout.sqf files in the "functions" folder. There you can add or change loadouts! If you add new roles, remember to add these in *Loadouts.sqf file!
+
+### ACE Arsenal
+You can easily remove arsenal access on the loadout boxes in 3Den through deleting the arsenal script line on the box itself. The other two are to restrict the box on moving around. I highly advice against removing them!
 
 ### Mod dependency
 In mission.sqm you can change the number of mods and delete the unnecessary mods from the requirement list. You can find this list right on top of the file. Keep in mind, that the file starts to count from 0. So if you have 30 mods as requirement for example, you'll find mod 0 to 29 in the list! Also make sure to still have a correct numbering from 0 to x.

@@ -89,6 +89,9 @@ In mission.sqm you can change the number of mods and delete the unnecessary mods
  ### Our modset (ease of use usage for the templates)
 We don't offer this for  permanent use. We are fine to set you up with a working version of our own modset. If you are interested in using it for your own unit, please consider setting up an own repository through Arma3Sync or Swifty! If we encounter a huge jump in our upload traffic, we are going to restrict this offer. So use it responsibly for your own, and others, good!
  * ftp://10th-mntd.de/modset/.a3s/autoconfig
+
+# Credits
+Laumi from "Virtuelle Panzerbrigade 21" for the Loadout Script (https://vpzbrig21.de/)
+
  
- 
- Have fun using these templates and feel free 
+Have fun using these templates and feel free 

@@ -53,7 +53,7 @@ We are using a fixed loadout, seperated on four boxes for different armies:
  * US Army (Multicam/VSM)
  * US Marines (MARPAT/RHSUSAF)
  * Bundeswehr (Flecktarn/BWMod)
- * Russian Army (??/RHSAFRF)
+ * Russian Army (EMR/RHSAFRF)
 
 Together with the loadout the unit/player is set either as medic, engineer or neither depending on the role selected. The loadout system could be transfered into an own mod. But this idea is still subject to change. 
  
@@ -91,6 +91,8 @@ We don't offer this for  permanent use. We are fine to set you up with a working
  * ftp://10th-mntd.de/modset/.a3s/autoconfig
 
 # Credits
+Chris for the help with the TFAR move
+Sam for the help with the Russian loadouts
 Laumi from "Virtuelle Panzerbrigade 21" for the Loadout Script (https://vpzbrig21.de/)
 
  

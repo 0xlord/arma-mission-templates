@@ -91,6 +91,7 @@ We don't offer this for  permanent use. We are fine to set you up with a working
  * ftp://10th-mntd.de/modset/.a3s/autoconfig
 
 # Credits
+ * sevenVM for the help with the US/DE/RU loadouts
  * Chris for the help with the TFAR move
  * Sam for the help with the Russian loadouts
  * Laumi from "Virtuelle Panzerbrigade 21" for the Loadout Script (https://vpzbrig21.de/)

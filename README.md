@@ -4,7 +4,7 @@ As a template for us it will depend on our modset. However the goal in mind is t
 Be advised that we actively develop these templates for our own needs mostly. Please see "How to change things" for further customization towards your own needs.
 
 # Design philosophy
-Initially I wanted to build a template we can use to play Zeus missions on the map Rosche. From just two squads and an ACE arsenal box it quickly developed into a fully fledged, 84 players capable, mission template with a correct slot list and whatnot. This development were quickly adopted by our mission builders, because those templates delivered a solid foundation to build upon without the hour long hassle of setting up fireteams, squads and platoons. The template currently features:
+Initially I wanted to build a template we can use to play Zeus missions on the map Rosche. From just two squads and an ACE arsenal box it quickly developed into a fully fledged, 84 players capable, mission template with a correct slot list and whatnot. This development were quickly adopted by our mission builders, because those templates delivered a solid foundation to build upon without the hour long hassle of setting up fireteams, squads and platoons.
 
 ### "Why not just upload it to workshop?"
 The answer is simple: I am to lazy to host our own git repository on our server. Thus said I am a huge supporter of the free and open source movement. Also I've received so many support and good times over the last years since I've came into the ARMA series with ARMA 3 that it was time to give something back to this outstanding community!
@@ -75,6 +75,7 @@ In mission.sqm you can change the number of mods and delete the unnecessary mods
 
 # Available Maps
  * Rosche - https://steamcommunity.com/sharedfiles/filedetails/?id=1527410521
+ * Anizay - https://steamcommunity.com/sharedfiles/filedetails/?id=1537973181
 
 # Required mods
  * CBA_3 - https://steamcommunity.com/sharedfiles/filedetails/?l=german&id=450814997

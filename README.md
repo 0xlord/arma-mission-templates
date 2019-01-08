@@ -56,6 +56,7 @@ We are using a fixed loadout, seperated on four boxes for different armies:
  * Russian Army (EMR/RHSAFRF)
 
 Together with the loadout the unit/player is set either as medic, engineer or neither depending on the role selected. The loadout system could be transfered into an own mod. But this idea is still subject to change. 
+Be adviced, that players start with vanilla loutout. Therefore most loadout mods, including RHS, are optional unless you use the embedded loadout system.
  
 # How to change things?
 ### Group names
@@ -82,10 +83,10 @@ In mission.sqm you can change the number of mods and delete the unnecessary mods
  * ACE - https://steamcommunity.com/sharedfiles/filedetails/?id=463939057
  * ACEX - https://steamcommunity.com/sharedfiles/filedetails/?id=708250744
  * TFAR 1.0 - https://steamcommunity.com/sharedfiles/filedetails/?id=894678801
- * RHSUSAF - https://steamcommunity.com/sharedfiles/filedetails/?id=843577117
- * RHSAFRF - https://steamcommunity.com/sharedfiles/filedetails/?id=843425103
- * VSM - https://steamcommunity.com/workshop/filedetails/?id=823636749
- * NIArms - https://steamcommunity.com/sharedfiles/filedetails/?id=1208517358
+ * (Optional) RHSUSAF - https://steamcommunity.com/sharedfiles/filedetails/?id=843577117
+ * (Optional) RHSAFRF - https://steamcommunity.com/sharedfiles/filedetails/?id=843425103
+ * (Optional) VSM - https://steamcommunity.com/workshop/filedetails/?id=823636749
+ * (Optional) NIArms - https://steamcommunity.com/sharedfiles/filedetails/?id=1208517358
  
  ### Our modset (ease of use usage for the templates)
 We don't offer this for  permanent use. We are fine to set you up with a working version of our own modset. If you are interested in using it for your own unit, please consider setting up an own repository through Arma3Sync or Swifty! If we encounter a huge jump in our upload traffic, we are going to restrict this offer. So use it responsibly for your own, and others, good!

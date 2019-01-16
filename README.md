@@ -75,8 +75,9 @@ You can easily remove arsenal access on the loadout boxes in 3Den through deleti
 In mission.sqm you can change the number of mods and delete the unnecessary mods from the requirement list. You can find this list right on top of the file. Keep in mind, that the file starts to count from 0. So if you have 30 mods as requirement for example, you'll find mod 0 to 29 in the list! Also make sure to still have a correct numbering from 0 to x.
 
 # Available Maps
- * Rosche - https://steamcommunity.com/sharedfiles/filedetails/?id=1527410521
  * Anizay - https://steamcommunity.com/sharedfiles/filedetails/?id=1537973181
+ * Rosche - https://steamcommunity.com/sharedfiles/filedetails/?id=1527410521
+ * Takistan Mountains - https://steamcommunity.com/sharedfiles/filedetails/?l=german&id=583544987 
 
 # Required mods
  * CBA_3 - https://steamcommunity.com/sharedfiles/filedetails/?l=german&id=450814997

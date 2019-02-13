@@ -1,0 +1,45 @@
+class Header
+{
+	gameType = Cooperative;
+	minPlayers = 1;
+	maxPlayers = 84;
+};
+
+enableDebugConsole = 2;
+
+respawn = "BASE";
+respawnDelay = 10;
+
+class CfgFunctions {
+    class usarmy {
+        class Mission {
+			file = "functions";
+			class addLoadoutsUSArmy{};
+            class loadoutUSArmy{};
+        };
+    };
+	
+	class usmarines {
+        class Mission {
+			file = "functions";
+			class addLoadoutsUSMarines{};
+            class loadoutUSMarines{};
+        };
+    };
+	
+	class dearmy {
+        class Mission {
+			file = "functions";
+			class addLoadoutsDEArmy{};
+            class loadoutDEArmy{};
+        };
+	};
+	
+	class rusarmy {
+        class Mission {
+			file = "functions";
+			class addLoadoutsRUArmy{};
+            class loadoutRUArmy{};
+        };
+    };
+};

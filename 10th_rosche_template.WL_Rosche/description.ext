@@ -28,7 +28,7 @@ minPlayerDistance = 75;
 class Header {
 	gameType = Coop;
 	minPlayers = 2;
-	maxPlayers = 98;
+	maxPlayers = 99;
 };
 
 class CfgFunctions {

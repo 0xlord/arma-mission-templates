@@ -17,12 +17,12 @@ _player setVariable ["KAT_loadout", "BUND_FO", true];
 _player setUnitRank "SERGEANT";
 
 /** CLOTHING */
-_player forceAddUniform selectRandom ["PBW_Uniform3_tropen", "PBW_Uniform3K_tropen", "PBW_Uniform4_tropen", "PBW_Uniform4K_tropen"];
-_player addVest "BWA3_Vest_Leader_Tropen";
-_player addHeadgear "BWA3_M92_Tropen";
+_player forceAddUniform selectRandom ["PBW_Uniform3_fleck", "PBW_Uniform3K_fleck", "PBW_Uniform4_fleck", "PBW_Uniform4K_fleck"];
+_player addVest "BWA3_Vest_Leader_Fleck";
+_player addHeadgear "BWA3_M92_Fleck";
 
 /** COMMS */
-_player addBackpackGlobal "TFAR_rt1523g_big_bwmod_tropen";
+_player addBackpackGlobal "TFAR_rt1523g_big_bwmod";
 _player linkItem "ItemMap";
 _player linkItem "ItemCompass";
 _player linkItem "ItemWatch";

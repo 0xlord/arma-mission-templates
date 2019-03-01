@@ -17,9 +17,9 @@ _player setVariable ["KAT_loadout", "USMC_SNI", true];
 _player setUnitRank "SERGEANT";
 
 /** CLOTHING */
-_player forceAddUniform "rhs_uniform_FROG01_d";
+_player forceAddUniform "rhs_uniform_FROG01_wd";
 _player addVest "VSM_RAV_operator_OGA";
-_player addHeadgear "rhsusf_lwh_helmet_marpatd";
+_player addHeadgear "rhsusf_lwh_helmet_marpatwd";
 
 /** COMMS */
 _player linkItem "ItemMap";
@@ -62,9 +62,9 @@ for "_i" from 1 to 2 do {
 };
 
 /** PRIMARY */
-_player addBackpackGlobal "ace_gunbag_tan";
+_player addBackpackGlobal "ace_gunbag";
 private _gunbag = backpackContainer _player;
-private _weapon = "rhs_weap_m40a5_d";
+private _weapon = "rhs_weap_m40a5";
 private _items =  ["rhsusf_acc_harris_swivel", "optic_LRPS"];
 private _magazines = [];
 _gunbag setVariable ["ace_gunbag_gunbagWeapon", [_weapon, _items, _magazines], true];

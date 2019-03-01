@@ -17,9 +17,9 @@ _player setVariable ["KAT_loadout", "BUND_AAT", true];
 _player setUnitRank "PRIVATE";
 
 /** CLOTHING */
-_player forceAddUniform selectRandom ["PBW_Uniform3_tropen", "PBW_Uniform3K_tropen", "PBW_Uniform4_tropen", "PBW_Uniform4K_tropen"];
-_player addVest "BWA3_Vest_Rifleman_Tropen";
-_player addHeadgear "BWA3_M92_Tropen";
+_player forceAddUniform selectRandom ["PBW_Uniform3_fleck", "PBW_Uniform3K_fleck", "PBW_Uniform4_fleck", "PBW_Uniform4K_fleck"];
+_player addVest "BWA3_Vest_Rifleman_Fleck";
+_player addHeadgear "BWA3_M92_Fleck";
 _player addBackpackGlobal "Redd_Milan_Static_Tripod";
 
 /** COMMS */

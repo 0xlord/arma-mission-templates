@@ -17,9 +17,9 @@ _player setVariable ["KAT_loadout", "BUND_MKM", true];
 _player setUnitRank "PRIVATE";
 
 /** CLOTHING */
-_player forceAddUniform selectRandom ["PBW_Uniform3_tropen", "PBW_Uniform3K_tropen", "PBW_Uniform4_tropen", "PBW_Uniform4K_tropen"];
-_player addVest "BWA3_Vest_Marksman_Tropen";
-_player addHeadgear "BWA3_M92_Tropen";
+_player forceAddUniform selectRandom ["PBW_Uniform3_fleck", "PBW_Uniform3K_fleck", "PBW_Uniform4_fleck", "PBW_Uniform4K_fleck"];
+_player addVest "BWA3_Vest_Marksman_Fleck";
+_player addHeadgear "BWA3_M92_Fleck";
 
 /** COMMS */
 _player linkItem "ItemMap";
@@ -60,7 +60,7 @@ _player addItemToVest "HandGrenade";
 _player addItemToVest "hlc_20rnd_762x51_b_G3";
 
 _player addWeapon "hlc_rifle_g3sg1ris";
-_player addPrimaryWeaponItem "hlc_optic_LeupoldM3A";
+_player addPrimaryWeaponItem "optic_DMS";
 _player addItemToVest "hlc_optic_HensoldtZO_Lo_2D";
 
 for "_i" from 1 to 7 do {

@@ -17,10 +17,10 @@ _player setVariable ["KAT_loadout", "USMC_AMG", true];
 _player setUnitRank "PRIVATE";
 
 /** CLOTHING */
-_player forceAddUniform "rhs_uniform_FROG01_d";
+_player forceAddUniform "rhs_uniform_FROG01_wd";
 _player addVest "VSM_RAV_operator_OGA";
 _player addBackpackGlobal "VSM_OGA_carryall";
-_player addHeadgear "rhsusf_lwh_helmet_marpatd";
+_player addHeadgear "rhsusf_lwh_helmet_marpatwd";
 
 /** COMMS */
 _player linkItem "ItemMap";

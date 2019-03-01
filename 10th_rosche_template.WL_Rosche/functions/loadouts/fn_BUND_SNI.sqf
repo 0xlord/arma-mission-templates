@@ -17,9 +17,9 @@ _player setVariable ["KAT_loadout", "BUND_SNI", true];
 _player setUnitRank "SERGEANT";
 
 /** CLOTHING */
-_player forceAddUniform selectRandom ["PBW_Uniform3_tropen", "PBW_Uniform3K_tropen", "PBW_Uniform4_tropen", "PBW_Uniform4K_tropen"];
-_player addVest "BWA3_Vest_Rifleman_Tropen";
-_player addHeadgear "BWA3_M92_Tropen";
+_player forceAddUniform selectRandom ["PBW_Uniform3_fleck", "PBW_Uniform3K_fleck", "PBW_Uniform4_fleck", "PBW_Uniform4K_fleck"];
+_player addVest "BWA3_Vest_Rifleman_Fleck";
+_player addHeadgear "BWA3_M92_Fleck";
 
 /** COMMS */
 _player linkItem "ItemMap";
@@ -57,10 +57,10 @@ for "_i" from 1 to 2 do {
 _player addItemToVest "HandGrenade";
 
 /** PRIMARY */
-_player addBackpackGlobal "ace_gunbag_tan";
+_player addBackpackGlobal "ace_gunbag";
 private _gunbag = backpackContainer _player;
-private _weapon = "hlc_rifle_awmagnum_BL";
-private _items =  ["BWA3_optic_Hensoldt"];
+private _weapon = "hlc_rifle_awmagnum";
+private _items =  ["optic_LRPS"];
 private _magazines = [];
 _gunbag setVariable ["ace_gunbag_gunbagWeapon", [_weapon, _items, _magazines], true];
 for "_i" from 1 to 5 do {

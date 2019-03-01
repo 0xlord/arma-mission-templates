@@ -17,12 +17,12 @@ _player setVariable ["KAT_loadout", "BUND_CRW_LEAD", true];
 _player setUnitRank "SERGEANT";
 
 /** CLOTHING */
-_player forceAddUniform "BWA3_Uniform_Crew_Tropen";
-_player addVest "BWA3_Vest_Tropen";
-_player addItemToVest "rhsusf_cvc_alt_helmet";
-_player addItemToVest "PBW_RevisionT_Klar";
+_player forceAddUniform "BWA3_Uniform_Crew_Fleck";
+_player addVest "BWA3_Vest_Fleck";
+_player addItemToVest "rhsusf_cvc_green_alt_helmet";
+_player addItemToVest "PBW_RevisionF_klar";
 _player addHeadgear "BWA3_Beret_Pz";
-_player addBackpackGlobal "BWA3_AssaultPack_Tropen";
+_player addBackpackGlobal "BWA3_AssaultPack_Fleck";
 
 /** COMMS */
 _player linkItem "ItemMap";

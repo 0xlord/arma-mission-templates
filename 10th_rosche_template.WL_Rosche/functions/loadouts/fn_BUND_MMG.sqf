@@ -17,10 +17,10 @@ _player setVariable ["KAT_loadout", "BUND_MMG", true];
 _player setUnitRank "PRIVATE";
 
 /** CLOTHING */
-_player forceAddUniform selectRandom ["PBW_Uniform3_tropen", "PBW_Uniform3K_tropen", "PBW_Uniform4_tropen", "PBW_Uniform4K_tropen"];
-_player addVest "BWA3_Vest_MachineGunner_Tropen";
-_player addHeadgear "BWA3_M92_Tropen";
-_player addBackpackGlobal "BWA3_AssaultPack_Tropen";
+_player forceAddUniform selectRandom ["PBW_Uniform3_fleck", "PBW_Uniform3K_fleck", "PBW_Uniform4_fleck", "PBW_Uniform4K_fleck"];
+_player addVest "BWA3_Vest_MachineGunner_Fleck";
+_player addHeadgear "BWA3_M92_Fleck";
+_player addBackpackGlobal "BWA3_AssaultPack_Fleck";
 
 /** COMMS */
 _player linkItem "ItemMap";

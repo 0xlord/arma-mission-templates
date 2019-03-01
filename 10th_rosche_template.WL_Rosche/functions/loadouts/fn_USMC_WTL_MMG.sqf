@@ -17,9 +17,9 @@ _player setVariable ["KAT_loadout", "USAM_WTL_MMG", true];
 _player setUnitRank "SERGEANT";
 
 /** CLOTHING */
-_player forceAddUniform "rhs_uniform_FROG01_d";
+_player forceAddUniform "rhs_uniform_FROG01_wd";
 _player addVest "VSM_RAV_operator_OGA";
-_player addHeadgear "rhsusf_lwh_helmet_marpatd";
+_player addHeadgear "rhsusf_lwh_helmet_marpatwd";
 
 /** COMMS */
 _player addBackpackGlobal "tfw_ilbe_coy";

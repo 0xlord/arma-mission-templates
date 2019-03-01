@@ -17,9 +17,9 @@ _player setVariable ["KAT_loadout", "USMC_UGL", true];
 _player setUnitRank "PRIVATE";
 
 /** CLOTHING */
-_player forceAddUniform "rhs_uniform_FROG01_d";
+_player forceAddUniform "rhs_uniform_FROG01_wd";
 _player addVest "VSM_RAV_Breacher_OGA";
-_player addHeadgear "rhsusf_lwh_helmet_marpatd";
+_player addHeadgear "rhsusf_lwh_helmet_marpatwd";
 _player addBackpackGlobal "VSM_OGA_Backpack_Compact";
 _player addGoggles "rhs_googles_clear";
 

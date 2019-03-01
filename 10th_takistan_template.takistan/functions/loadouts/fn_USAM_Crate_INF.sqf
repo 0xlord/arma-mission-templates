@@ -8,7 +8,7 @@ params [
 ];
 
 // Magazine
-_box addItemCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_PMAG", 21];
+_box addItemCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_PMAG", 20];
 _box addItemCargoGlobal ["rhsusf_200Rnd_556x45_soft_pouch", 6];
 _box addItemCargoGlobal ["rhsusf_20Rnd_762x51_SR25_m62_Mag", 5];
 

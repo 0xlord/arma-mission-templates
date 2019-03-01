@@ -60,7 +60,7 @@ _player addItemToVest "HandGrenade";
 _player addItemToVest "hlc_20rnd_762x51_b_G3";
 
 _player addWeapon "hlc_rifle_g3sg1ris";
-_player addPrimaryWeaponItem "hlc_optic_LeupoldM3A";
+_player addPrimaryWeaponItem "optic_DMS";
 _player addItemToVest "hlc_optic_HensoldtZO_Lo_2D";
 
 for "_i" from 1 to 7 do {

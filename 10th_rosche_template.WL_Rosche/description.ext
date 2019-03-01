@@ -1,0 +1,71 @@
+﻿/*
+ * Author: Katalam
+ */
+
+author = "A.Katalam & B.Miller"; // mission author
+OnLoadName = "Template Rosche"; // mission title
+
+// choose-mission-screen description
+overviewText = "Missionstemplate für US Army: 10-Mann-Riflesquads, Weapon Teams, Logistik, Helikopter- und Kampfpanzerbesatzung und Zeus. KAT_template - Version: 1.0 vom: 01.03.2019";
+
+onLoadMission = "Viel Spaß!";
+//loadScreen = "logo.paa";
+//overviewPicture = "logo.paa";
+enableDebugConsole = 1;
+respawn = 3;
+respawnDelay = 5;
+respawnOnStart = -1;
+disabledAI = 1;
+disableChannels[] = {{0, true, true}, {6, true, true}};
+saving = 0;
+corpseManagerMode = 1;
+corpseRemovalMaxTime = 900;
+corpseRemovalMinTime = 600;
+corpseLimit = 30;
+wreckManagerMode = 0;
+minPlayerDistance = 75;
+
+class Header {
+	gameType = Coop;
+	minPlayers = 2;
+	maxPlayers = 99;
+};
+
+class CfgFunctions {
+    class KAT {
+		#include "functions\template_general\CfgFunctions.hpp"
+		#include "functions\template_loadout\CfgFunctions.hpp"
+	};
+	#include "functions\loadouts\CfgFunctions.hpp"
+};
+
+class CfgRemoteExec {
+	class Commands {
+		mode = 2;
+	};
+	class Functions {
+		mode = 2;
+		jip = 1;
+	};
+};
+
+class Params {
+	class Daytime {
+		title = "Uhrzeit";
+		texts[] = {"3 Uhr", "6 Uhr", "9 Uhr", "12 Uhr", "15 Uhr", "18 Uhr", "21 Uhr", "24 Uhr"};
+		values[] = {3, 6, 9, 12, 15, 18, 21, 0};
+		default = 9;
+	};
+	class Weather {
+		title = "Wetterlage";
+		texts[] = {"Klarer Himmel", "Leichte Bewölkung", "Starke Bewölkung"};
+		values[] = {0, 3, 7};
+		default = 3;
+	};
+	class OverrideIndependentFriendship {
+		title = "Beziehung von Independent zu Bluefor bzw. Opfor überschreiben?";
+		texts[] = {"Beziehungen nicht überschreiben (wie im Editor eingestellt)", "Independent ist feindlich", "Independent mit Bluefor gegen Opfor", "Independent mit Opfor gegen Bluefor"};
+		values[] = {0, 1, 2, 3};
+		default = 1;
+	};
+};

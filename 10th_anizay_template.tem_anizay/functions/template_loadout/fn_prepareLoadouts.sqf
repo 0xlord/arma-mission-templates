@@ -1,5 +1,7 @@
 ﻿/*
- * Author: Katalam
+ * Author: Sinus
+ * The complete loadout system was developed by Sinus.
+ * I changed much but directly this is the main feature and i have to credit this to him.
  *
  * Fills the loadout-name to loadout-function mapping "KAT_loadouts_player" and "KAT_loadouts_player" with
  * the funtions found with tag "LOADOUT_PLAYER" and "LOADOUT_VEH".

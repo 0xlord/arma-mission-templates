@@ -14,6 +14,7 @@
  *
  * Example:
  * [] call KAT_fnc_teargas;
+ * ["G_Respirator_blue_F", "SmokeShellYellow", 5, 10] call KAT_fnc_teargas;
  *
  * Public: No
  */

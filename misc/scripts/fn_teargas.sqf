@@ -19,14 +19,13 @@
  * Public: No
  */
 
-params [
-	["_gasmask", "G_Respirator_blue_F", [""]],
-	["_smokeshell", "SmokeShellYellow", [""]],
-	["_distance", 5, [0]],
-	["_adjustment", 10, [0]]
-];
-
 [{
+	params [
+		["_gasmask", "G_Respirator_blue_F", [""]],
+		["_smokeshell", "SmokeShellYellow", [""]],
+		["_distance", 5, [0]],
+		["_adjustment", 10, [0]]
+	];
 	if (goggles player isEqualTo _gasmask) exitWith {
 		KAT_blur_effect ppEffectEnable false;
 		ppEffectDestroy KAT_blur_effect;
@@ -61,4 +60,4 @@ params [
 		enableCamShake false;
 		resetCamShake;
 	};
-}, 1, []] call CBA_fnc_addPerFrameHandler;
+}, 1, _this] call CBA_fnc_addPerFrameHandler;

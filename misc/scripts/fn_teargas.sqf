@@ -4,7 +4,10 @@
  * Local Effect.
  *
  * Arguments:
- * None
+ * 0: Gas mask <STRING> (optional)
+ * 1: SmokeShell <STRING> (optional)
+ * 2: Distance <NUMBER> (optional)
+ * 3: Adjustement <NUMBER> (optional)
  *
  * Return Value:
  * None
@@ -15,14 +18,21 @@
  * Public: No
  */
 
+params [
+	["_gasmask", "G_Respirator_blue_F", [""]],
+	["_smokeshell", "SmokeShellYellow", [""]],
+	["_distance", 5, [0]],
+	["_adjustment", 10, [0]]
+];
+
 [{
-	if (goggles player isEqualTo "G_Spectacles_Tinted") exitWith { // Edit the gas mask!
+	if (goggles player isEqualTo _gasmask) exitWith {
 		KAT_blur_effect ppEffectEnable false;
 		ppEffectDestroy KAT_blur_effect;
 		enableCamShake false;
 		resetCamShake;
 	};
-	private _object = nearestObject [getpos player, "SmokeShellYellow"]; // Green, Blue, etc.
+	private _object = nearestObject [getpos player, _smokeshell];
 	private _pos = getPos _object;
 	private _priority = 400;
 
@@ -31,7 +41,7 @@
 		KAT_blur_effect ppEffectCommit 1;
 	};
 	private "_handle";
-	if (_pos distance (getPos player) < 5) then {
+	if (_pos distance (getPos player) < _distance) then {
 		while {
 			_handle = ppEffectCreate ["DynamicBlur", _priority];
 			_handle < 0;
@@ -40,7 +50,7 @@
 		};
 		KAT_blur_effect = _handle;
 		_handle ppEffectEnable true;
-		_handle ppEffectAdjust [10];
+		_handle ppEffectAdjust [_adjustment];
 		_handle ppEffectCommit 0.1;
 		enableCamShake false;
 		addCamShake [10, 45, 10];

@@ -16,13 +16,13 @@
  */
 
 [{
-	if (goggles player isEqualTo "G_Spectacles_Tinted") exitWith {
+	if (goggles player isEqualTo "G_Spectacles_Tinted") exitWith { // Edit the gas mask!
 		KAT_blur_effect ppEffectEnable false;
 		ppEffectDestroy KAT_blur_effect;
 		enableCamShake false;
 		resetCamShake;
 	};
-	private _object = nearestObject [getpos player, "SmokeShellGreen"]; //Yellow
+	private _object = nearestObject [getpos player, "SmokeShellYellow"]; // Green, Blue, etc.
 	private _pos = getPos _object;
 	private _priority = 400;
 

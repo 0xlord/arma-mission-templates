@@ -64,7 +64,7 @@ private "_currentParent";
 				_items pushBack _scope;
 				_gunbag setVariable ["ace_gunbag_gunbagWeapon", [_weapon, _items, _magazines]];
 			}, {
-				player getVariable ["KAT_loadout", "USAM_RFM"] isEqualTo "USAM_SNI"
+				player getVariable ["KAT_loadout", "USAM_RFM"] isEqualTo "USAM_SNI";
 		}, {}, _x select 1] call ace_interact_menu_fnc_createAction
 	] call ace_interact_menu_fnc_addActionToObject;
 } forEach KAT_gui_attachments_scope_DMR_USAM;

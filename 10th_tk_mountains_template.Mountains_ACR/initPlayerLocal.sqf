@@ -243,6 +243,49 @@ KAT_gui_attachments_goggles_BUND = [
 	["Entfernen",							"REMOVE"]
 ];
 
+KAT_gui_helmet_PIL_USAM = [
+	["Black",								"rhsusf_hgu56p_black"],
+	["Black (Visor)",						"rhsusf_hgu56p_visor_black"],
+	["Black (Empire)",						"rhsusf_hgu56p_visor_mask_Empire_black"],
+	["Green",								"rhsusf_hgu56p_green"],
+	["Green (Visor)",						"rhsusf_hgu56p_visor_green"],
+	["Olive",								"rhsusf_hgu56p"],
+	["Olive (Visor)",						"rhsusf_hgu56p_visor"],
+	["Pink",								"rhsusf_hgu56p_pink"],
+	["Pink (Visor)",						"rhsusf_hgu56p_visor_pink"],
+	["SAF",									"rhsusf_hgu56p_saf"],
+	["SAF (Visor)",							"rhsusf_hgu56p_visor_saf"],
+	["USA",									"rhsusf_hgu56p_usa"],
+	["USA (Visor)",							"rhsusf_hgu56p_visor_usa"],
+	["White",								"rhsusf_hgu56p_white"],
+	["White (Visor)",						"rhsusf_hgu56p_visor_white"],
+	["IHADSS",								"rhsusf_ihadss"]
+];
+
+KAT_gui_helmet_CRW_USAM = [
+	["Black",								"rhsusf_hgu56p_mask_black"],
+	["Black (Skull)",						"rhsusf_hgu56p_mask_black_skull"],
+	["Black (Pirat)",						"rhsusf_hgu56p_visor_mask_black"],
+	["Black (Empire) (Visor)",				"rhsusf_hgu56p_visor_mask_Empire_black"],
+	["Black (Skull) (Visor)",				"rhsusf_hgu56p_visor_mask_black_skull"],
+	["Green",								"rhsusf_hgu56p_mask_green"],
+	["Green (Mo)",							"rhsusf_hgu56p_mask_green_mo"],
+	["Green (Visor)",						"rhsusf_hgu56p_visor_mask_green"],
+	["Green (Mo) (Visor)",					"rhsusf_hgu56p_visor_mask_green_mo"],
+	["Green (Smiley)",						"rhsusf_hgu56p_mask_smiley"],
+	["Green (Smiley) (Visor)",				"rhsusf_hgu56p_visor_mask_smiley"],
+	["Olive",								"rhsusf_hgu56p_mask"],
+	["Olive (Mo)",							"rhsusf_hgu56p_mask_mo"],
+	["Olive (Skull)",						"rhsusf_hgu56p_mask_skull"],
+	["Olive (Visor)",						"rhsusf_hgu56p_visor_mask"],
+	["Olive (Mo) (Visor)",					"rhsusf_hgu56p_visor_mask_mo"],
+	["Olive (Skull) (Visor)",				"rhsusf_hgu56p_visor_mask_skull"],
+	["Pink",								"rhsusf_hgu56p_mask_pink"],
+	["Pink (Visor)",						"rhsusf_hgu56p_visor_mask_pink"],
+	["SAF",									"rhsusf_hgu56p_mask_saf"],
+	["SAF (Visor)",							"rhsusf_hgu56p_visor_mask_saf"]
+];
+
 waitUntil {player == player};
 
 player unlinkItem "ItemRadio";

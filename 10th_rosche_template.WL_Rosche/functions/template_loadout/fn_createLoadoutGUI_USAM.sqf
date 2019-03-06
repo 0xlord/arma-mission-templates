@@ -77,6 +77,31 @@ private "_currentParent";
 	}, {true}, {}] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
+// Helmet for Helicopter pilots and crew
+[_object, 0, ["KAT_loadoutActionParent"],
+	["KAT_loadoutAction_H", "Helmet", "", {}, {true}] call ace_interact_menu_fnc_createAction
+] call ace_interact_menu_fnc_addActionToObject;
+
+{
+	[_object, 0, ["KAT_loadoutActionParent", "KAT_loadoutAction_H"],
+		["KAT_loadoutAction_H1" + (str _forEachIndex), _x select 0, "", {
+				player addHeadgear (_this select 2);
+		}, {
+			player getVariable ["KAT_loadout", "USAM_RFM"] isEqualTo "USAM_HELI_PIL";
+		}, {}, _x select 1] call ace_interact_menu_fnc_createAction
+	] call ace_interact_menu_fnc_addActionToObject;
+} forEach KAT_gui_helmet_PIL_USAM;
+
+{
+	[_object, 0, ["KAT_loadoutActionParent", "KAT_loadoutAction_H"],
+		["KAT_loadoutAction_H2" + (str _forEachIndex), _x select 0, "", {
+				player addHeadgear (_this select 2);
+		}, {
+			player getVariable ["KAT_loadout", "USAM_RFM"] isEqualTo "USAM_HELI_CRW";
+		}, {}, _x select 1] call ace_interact_menu_fnc_createAction
+	] call ace_interact_menu_fnc_addActionToObject;
+} forEach KAT_gui_helmet_CRW_USAM;
+
 // Silencer
 [_object, 0, ["KAT_loadoutActionParent"],
 	["KAT_loadoutAction_Silence", "Schalldämpfer", "", {

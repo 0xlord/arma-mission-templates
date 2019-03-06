@@ -18,7 +18,7 @@ _player setUnitRank "SERGEANT";
 
 /** CLOTHING */
 _player forceAddUniform "U_B_PilotCoveralls";
-_player addHeadgear "RHS_jetpilot_usaf";
+_player addHeadgear "H_PilotHelmetFighter_B";
 _player addBackpackGlobal "B_Parachute";
 
 /** COMMS */

@@ -19,21 +19,49 @@
  * Public: No
  */
 
+params [
+    ["_gasmask", "G_Respirator_blue_F", [""]],
+    ["_smokeshell", ["SmokeShellYellow", "G_40mm_SmokeYellow"], [""]],
+    ["_distance", 5, [0]],
+    ["_adjustment", 10, [0]]
+];
+
 [{
-	params [
-		["_gasmask", "G_Respirator_blue_F", [""]],
-		["_smokeshell", "SmokeShellYellow", [""]],
-		["_distance", 5, [0]],
-		["_adjustment", 10, [0]]
-	];
+    params ["_args", "_idPFH"];
+    _args params ["_gasmask", "_smokeshell", "_distance", "_adjustment"];
+    if (false) then {
+        [_idPFH] call CBA_fnc_removePerFrameHandler;
+    };
 	if (goggles player isEqualTo _gasmask) exitWith {
 		KAT_blur_effect ppEffectEnable false;
 		ppEffectDestroy KAT_blur_effect;
 		enableCamShake false;
 		resetCamShake;
 	};
-	private _object = nearestObject [getpos player, _smokeshell];
-	private _pos = getPos _object;
+    private _objects = [];
+    private _object = [];
+    _objects pushBack (nearestObject [getPos player, (_smokeshell select 0)]);
+    _objects pushBack (nearestObject [getPos player, (_smokeshell select 1)]);
+    {
+        if !(getPos _x isEqualTo [0,0,0]) then {
+            _object pushBack _x;
+        };
+    } forEach _objects;
+
+    private _pos = getPos (_object select 0);
+    if (count _object == 2) then {
+        private _distance_select_0 = player distance (getPos (_object select 0));
+        private _distance_select_1 = player distance (getPos (_object select 1));
+        switch (true) do {
+            case (_distance_select_0 > _distance_select_1): {
+                _pos = getPos (_object select 1);
+            };
+            case (_distance_select_0 < _distance_select_1): {
+                _pos = getPos (_object select 0);
+            };
+        };
+    };
+
 	private _priority = 400;
 
 	if (!(isNull curatorCamera) || !(alive player)) exitWith {
@@ -60,4 +88,4 @@
 		enableCamShake false;
 		resetCamShake;
 	};
-}, 1, _this] call CBA_fnc_addPerFrameHandler;
+}, 1, [_gasmask, _smokeshell, _distance, _adjustment]] call CBA_fnc_addPerFrameHandler;

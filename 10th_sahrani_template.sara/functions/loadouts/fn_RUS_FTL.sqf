@@ -1,6 +1,6 @@
 /*
  * Author: B.Miller
- * Loadout - Russian: Fireteam Leader
+ * Loadout - Russian: Fire Team Leader
  */
 params [
 	["_player", objNull, [objNull]],

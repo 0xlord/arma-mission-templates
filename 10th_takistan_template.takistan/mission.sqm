@@ -5354,7 +5354,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="USAM_FTL_1";
-						description="Alpha Fireteam Leader";
+						description="Alpha Fire Team Leader";
 						isPlayable=1;
 						class Inventory
 						{
@@ -6007,7 +6007,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="USAM_FTL_2";
-						description="Bravo Fireteam Leader";
+						description="Bravo Fire Team Leader";
 						isPlayable=1;
 						class Inventory
 						{
@@ -7024,7 +7024,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="USAM_FTL_3";
-						description="Alpha Fireteam Leader";
+						description="Alpha Fire Team Leader";
 						isPlayable=1;
 						class Inventory
 						{
@@ -7677,7 +7677,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="USAM_FTL_4";
-						description="Bravo Fireteam Leader";
+						description="Bravo Fire Team Leader";
 						isPlayable=1;
 						class Inventory
 						{
@@ -8694,7 +8694,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="USAM_FTL_5";
-						description="Alpha Fireteam Leader";
+						description="Alpha Fire Team Leader";
 						isPlayable=1;
 						class Inventory
 						{
@@ -9347,7 +9347,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="USAM_FTL_6";
-						description="Bravo Fireteam Leader";
+						description="Bravo Fire Team Leader";
 						isPlayable=1;
 						class Inventory
 						{

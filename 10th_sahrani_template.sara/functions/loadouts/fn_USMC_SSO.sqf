@@ -20,7 +20,7 @@ _player setUnitRank "PRIVATE";
 _player forceAddUniform "rhs_uniform_FROG01_d";
 _player addVest "VSM_RAV_operator_OGA";
 _player addHeadgear "rhsusf_lwh_helmet_marpatd";
-_player addBackpackGlobal "tfw_ilbe_dd_coy";
+_player addBackpackGlobal "B_rhsusf_B_BACKPACK";
 _player addGoggles "rhs_googles_clear";
 
 /** COMMS */

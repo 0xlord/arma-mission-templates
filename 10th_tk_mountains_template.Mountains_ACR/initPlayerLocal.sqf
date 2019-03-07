@@ -51,6 +51,12 @@ KAT_gui_player_loadouts_USAM = [
 	["Spotter",								"USAM_SPO"]
 ];
 KAT_gui_player_loadouts_USMC = [
+	"Stabs-Loadouts",
+	["Platoon Leader",						"USMC_PTL"],
+	["Platoon Sergeant",					"USMC_PSG"],
+	["Platoon System Operator",				"USMC_PSO"],
+	["Platoon Medic",						"USMC_MED_LEAD"],
+	["Joint Terminal Attack Controller",	"USMC_JTAC"],
 	"Mannschaftler-Loadouts",
 	["Squad Leader",						"USMC_SQL"],
 	["Assistant Squad Leader",				"USMC_ASL"],
@@ -61,7 +67,6 @@ KAT_gui_player_loadouts_USMC = [
 	["Grenadier",							"USMC_UGL"],
 	["Rifleman (MAAWS)",					"USMC_LAT"],
 	["Marksman",							"USMC_MKM"],
-	["Rifleman (UAV)",						"USMC_UAV"],
 	"Waffenteam-Loadouts",
 	["Weapon Squad Leader (MG)",			"USMC_WTL_MMG"],
 	["Machinegunner",						"USMC_MMG"],
@@ -69,7 +74,14 @@ KAT_gui_player_loadouts_USMC = [
 	["Weapon Team Leader (Launcher)",		"USMC_WTL_HAT"],
 	["Missile Specialist",					"USMC_HAT"],
 	["Assistant Missile Specialist",		"USMC_AAT"],
+	"Crew-Loadouts",
+	["Tank Commander",						"USMC_CRW_LEAD"],
+	["Tank Crew",							"USMC_CRW"],
+	["Jet Pilot",							"USAM_JET"],
+	["Helicopter Pilot",					"USMC_HELI_PIL"],
+	["Helicopter Crew",						"USMC_HELI_CRW"],
 	"weitere Loadouts",
+	["Ammo Bearer",							"USMC_AMB"],
 	["Diver",								"USMC_DIV"],
 	["Sniper",								"USMC_SNI"],
 	["Spotter",								"USMC_SPO"]
@@ -320,8 +332,9 @@ if (_loadoutName in ["USAM_ADM", "USAM_PTL"]) then {
 	NICHT EINFACH ALLE ANKLICKEN<br/>
 	<execute expression='call KAT_fnc_removeMissionEVH'>Looting EVH entfernen</execute><br/><br/>
 	<execute expression='KAT_spawnProtection = true'>Spawnprotection entfernen</execute>"]];
+	KAT_gui_player_loadouts_USAM append [["Zeus / Admin","USAM_ADM"]];
+	KAT_gui_player_loadouts_USMC append [["Zeus / Admin","USMC_ADM"]];
 };
-// FUCK YOU ARMA ENGINE
 
 player createDiaryRecord ["Diary", ["Funkfrequenzen", "Interne Funkfrequenzen:<br/><br/>
  - Warrior 1: 110 MHz<br/>

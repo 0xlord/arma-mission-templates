@@ -27,21 +27,25 @@ _player linkItem "ItemCompass";
 _player linkItem "ItemWatch";
 _player linkItem "TFAR_anprc152";
 _player linkItem "ItemAndroid";
+_player addWeapon "ACE_Vector";
 _player addItemToUniform "ACE_MapTools";
 _player addItemToUniform "ACE_microDAGR";
 for "_i" from 1 to 2 do {
 	_player addItemToUniform "ACE_CableTie";
 };
 _player addItemToVest "ACE_RangeCard";
+_player addItemToVest "ACE_ATragMX";
+_player addItemToVest "ACE_Kestrel4500";
+_player addItemToVest "adv_aceCPR_AED";
 
 /** EARPLUGS */
 _player addItemToUniform "ACE_EarPlugs";
 
 /** MEDICAL */
-for "_i" from 1 to 8 do {
+for "_i" from 1 to 10 do {
 	_player addItemToUniform "ACE_packingBandage";
 };
-for "_i" from 1 to 5 do {
+for "_i" from 1 to 10 do {
 	_player addItemToUniform "ACE_elasticBandage";
 };
 for "_i" from 1 to 2 do {
@@ -53,9 +57,6 @@ _player addItemToUniform "ACE_morphine";
 /** THROWABLES */
 for "_i" from 1 to 4 do {
 	_player addItemToVest "rhs_mag_an_m8hc";
-};
-for "_i" from 1 to 3 do {
-	_player addItemToVest "rhs_mag_mk84";
 };
 for "_i" from 1 to 2 do {
 	_player addItemToVest "HandGrenade";
@@ -74,6 +75,7 @@ for "_i" from 1 to 4 do {
 _player addItemToVest "rhs_mag_30Rnd_556x45_M855A1_PMAG";
 _player addWeapon "hlc_rifle_M27IAR";
 _player addPrimaryWeaponItem "rhsusf_acc_acog";
+_player addPrimaryWeaponItem "hlc_muzzle_556NATO_rotexiiic_grey";
 
 for "_i" from 1 to 2 do {
 	_player addItemToVest "rhs_mag_30Rnd_556x45_M855A1_PMAG";
@@ -90,7 +92,7 @@ if (_gearlevel) then {
 };
 
 /** SIDEARM */
-_player addItemToUniform "hlc_12Rnd_357SIG_B_P226";
+_player addItemToVest "hlc_12Rnd_357SIG_B_P226";
 _player addWeapon "hlc_pistol_P229R_357";
 _player addHandgunItem "hlc_acc_DBALPL_FL";
 _player addHandgunItem "HLC_optic228_HP";

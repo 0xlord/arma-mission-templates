@@ -18,7 +18,7 @@ _player setUnitRank "PRIVATE";
 
 /** CLOTHING */
 _player forceAddUniform "rhs_uniform_FROG01_d";
-_player addVest "VSM_RAV_operator_OGA";
+_player addVest "VSM_RAV_MG_OGA";
 _player addBackpackGlobal "VSM_OGA_Backpack_Compact";
 _player addHeadgear "rhsusf_lwh_helmet_marpatd";
 

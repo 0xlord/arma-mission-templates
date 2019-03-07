@@ -96,7 +96,7 @@ if (_gearlevel) then {
 };
 
 /** SIDEARM */
-_player addItemToUniform "hlc_12Rnd_357SIG_B_P226";
+_player addItemToVest "hlc_12Rnd_357SIG_B_P226";
 _player addWeapon "hlc_pistol_P229R_357";
 _player addHandgunItem "hlc_acc_DBALPL_FL";
 _player addHandgunItem "HLC_optic228_HP";

@@ -18,7 +18,7 @@ _player setUnitRank "PRIVATE";
 
 /** CLOTHING */
 _player forceAddUniform selectRandom ["VSM_Multicam_Crye_Camo", "VSM_Multicam_Crye_SS_Camo"];
-_player addVest "VSM_LBT6094_operator_Multicam";
+_player addVest "VSM_LBT6094_MG_Multicam";
 _player addHeadgear selectRandom ["VSM_OPS_2_multicam", "VSM_OPS_multicam"];
 _player addBackpackGlobal "VSM_Multicam_Backpack_Compact";
 

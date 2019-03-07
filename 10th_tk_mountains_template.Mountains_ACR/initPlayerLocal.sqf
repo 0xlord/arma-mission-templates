@@ -174,6 +174,7 @@ KAT_gui_cars_loadouts = [
 	["Humvee (Unarmed)",					"USAM_Veh_CAR@rhsusf_m1043_d"],
 	["Humvee (TOW)",						"USAM_Veh_CAR@rhsusf_m1045_d"],
 	["MRZR",								"USAM_Veh_CAR@rhsusf_mrzr4_d"],
+	["TT-650",								"USAM_Veh_CAR@RDS_tt650_Civ_01"],
 	"IFV",
 	["Bradley",								"USAM_Veh_TANK@RHS_M2A3_BUSKIII"],
 	"MRAPs",

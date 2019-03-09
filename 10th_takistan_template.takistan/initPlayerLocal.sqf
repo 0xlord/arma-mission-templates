@@ -82,6 +82,7 @@ KAT_gui_player_loadouts_USMC = [
 	["Helicopter Crew",						"USMC_HELI_CRW"],
 	"weitere Loadouts",
 	["Ammo Bearer",							"USMC_AMB"],
+	["EOD",									"USMC_EOD"],
 	["Diver",								"USMC_DIV"],
 	["Sniper",								"USMC_SNI"],
 	["Spotter",								"USMC_SPO"]

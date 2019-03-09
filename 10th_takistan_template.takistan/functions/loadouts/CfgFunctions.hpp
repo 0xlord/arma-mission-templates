@@ -86,6 +86,7 @@ class LOADOUT_PLAYER {
 		class USMC_CRW_LEAD{};
 		class USMC_CRW{};
 		class USMC_DIV{};
+		class USMC_EOD{};
 		class USMC_FTL{};
 		class USMC_HAT{};
 		class USMC_HELI_CRW{};

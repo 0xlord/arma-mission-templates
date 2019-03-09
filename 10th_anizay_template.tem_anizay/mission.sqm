@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=145;
+		nextID=165;
 	};
 	class Camera
 	{
-		pos[]={8478.7012,148.54941,6862.8184};
-		dir[]={-0.57955509,-0.46201703,-0.67150384};
-		up[]={-0.30196849,0.88678437,-0.34987473};
-		aside[]={-0.75712103,1.2377277e-006,0.65343577};
+		pos[]={8446.959,235.50998,6984.292};
+		dir[]={-0.67177731,-0.73579884,-0.087036125};
+		up[]={-0.72976083,0.67711997,-0.094546966};
+		aside[]={-0.12851048,-2.4078945e-006,0.99181378};
 	};
 };
 binarizationWanted=0;
@@ -3832,7 +3832,7 @@ class Mission
 							{
 								position[]={8398.6523,111.54,6975.938};
 							};
-							init="call{if (isServer) then {" \n "private _veh = ""rhsusf_M978A4_usarmy_d"" createVehicle (getPos this);" \n "_veh setDir (getDir this);" \n "[_veh, ""USAM_Veh_CAR""] call KAT_fnc_applyVehicleLoadout;" \n "};}";
+							init="call{if (isServer) then {" \n "private _veh = ""rhsusf_M978A4_usarmy_d"" createVehicle (getPos this);" \n "_veh setDir (getDir this);" \n "_veh setVehicleVarName ""USAM_Veh_CAR_1"";" \n "USAM_Veh_CAR_1 = _veh;" \n "};}";
 							id=178;
 							type="Logic";
 						};
@@ -3843,7 +3843,7 @@ class Mission
 							{
 								position[]={8392.6523,111.54,6975.938};
 							};
-							init="call{if (isServer) then {" \n "private _veh = ""rhsusf_M977A4_REPAIR_usarmy_d"" createVehicle (getPos this);" \n "_veh setDir (getDir this);" \n "[_veh, ""USAM_Veh_REPAIR""] call KAT_fnc_applyVehicleLoadout;" \n "};}";
+							init="call{if (isServer) then {" \n "private _veh = ""rhsusf_M977A4_REPAIR_usarmy_d"" createVehicle (getPos this);" \n "_veh setDir (getDir this);" \n "_veh setVehicleVarName ""USAM_Veh_REPAIR_2"";" \n "USAM_Veh_REPAIR_2 = _veh;" \n "};}";
 							id=179;
 							type="Logic";
 						};
@@ -3854,7 +3854,7 @@ class Mission
 							{
 								position[]={8386.6523,111.54,6975.938};
 							};
-							init="call{if (isServer) then {" \n "private _veh = ""rhsusf_M977A4_AMMO_usarmy_d"" createVehicle (getPos this);" \n "_veh setDir (getDir this);" \n "[_veh, ""USAM_Veh_REPAIR""] call KAT_fnc_applyVehicleLoadout;" \n "};}";
+							init="call{if (isServer) then {" \n "private _veh = ""rhsusf_M977A4_AMMO_usarmy_d"" createVehicle (getPos this);" \n "_veh setDir (getDir this);" \n "_veh setVehicleVarName ""USAM_Veh_REPAIR_1"";" \n "USAM_Veh_REPAIR_1 = _veh;" \n "};}";
 							id=180;
 							type="Logic";
 						};
@@ -3866,7 +3866,7 @@ class Mission
 								position[]={8359,111.54,6964};
 								angles[]={0,1.5707964,0};
 							};
-							init="call{if (isServer) then {" \n "private _veh = ""RHS_UH60M_d"" createVehicle (getPos this);" \n "_veh setDir (getDir this);" \n "[_veh] call KAT_fnc_clearVehicleInventory;" \n "};}";
+							init="call{if (isServer) then {" \n "private _veh = ""RHS_UH60M_d"" createVehicle (getPos this);" \n "_veh setDir (getDir this);" \n "_veh setVehicleVarName ""USAM_Veh_MED_1"";" \n "USAM_Veh_MED_1 = _veh;" \n "};}";
 							id=181;
 							type="Logic";
 						};
@@ -3878,7 +3878,7 @@ class Mission
 								position[]={8359,111.54,6944};
 								angles[]={0,4.712389,0};
 							};
-							init="call{if (isServer) then {" \n "private _veh = ""RHS_CH_47F_light"" createVehicle (getPos this);" \n "_veh setDir (getDir this);" \n "[_veh] call KAT_fnc_clearVehicleInventory;" \n "};}";
+							init="call{if (isServer) then {" \n "private _veh = ""RHS_CH_47F_light"" createVehicle (getPos this);" \n "_veh setDir (getDir this);" \n "_veh setVehicleVarName ""USAM_Veh_MED_2"";" \n "USAM_Veh_MED_2 = _veh;" \n "};}";
 							id=182;
 							type="Logic";
 						};
@@ -3890,7 +3890,7 @@ class Mission
 								position[]={8388.0557,111.54,6928.1362};
 								angles[]={0,1.5707964,0};
 							};
-							init="call{if (isServer) then {" \n "private _veh = ""rhsusf_M1078A1P2_D_fmtv_usarmy"" createVehicle (getPos this);" \n "_veh setDir (getDir this);" \n "[_veh, ""USAM_Veh_CAR""] call KAT_fnc_applyVehicleLoadout;" \n "};}";
+							init="call{if (isServer) then {" \n "private _veh = ""rhsusf_M1078A1P2_D_fmtv_usarmy"" createVehicle (getPos this);" \n "_veh setDir (getDir this);" \n "_veh setVehicleVarName ""USAM_Veh_CAR_3"";" \n "};}";
 							id=183;
 							type="Logic";
 						};
@@ -3902,7 +3902,7 @@ class Mission
 								position[]={8388.0557,111.54,6936.2661};
 								angles[]={0,1.5707964,0};
 							};
-							init="call{if (isServer) then {" \n "private _veh = ""rhsusf_M1078A1P2_D_fmtv_usarmy"" createVehicle (getPos this);" \n "_veh setDir (getDir this);" \n "[_veh, ""USAM_Veh_CAR""] call KAT_fnc_applyVehicleLoadout;" \n "};}";
+							init="call{if (isServer) then {" \n "private _veh = ""rhsusf_M1078A1P2_D_fmtv_usarmy"" createVehicle (getPos this);" \n "_veh setDir (getDir this);" \n "_veh setVehicleVarName ""USAM_Veh_CAR_2"";" \n "" \n "};}";
 							id=184;
 							type="Logic";
 						};

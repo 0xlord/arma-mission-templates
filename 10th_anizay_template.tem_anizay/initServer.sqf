@@ -44,9 +44,11 @@ KAT_noLootingEVH = call KAT_fnc_noLooting;
 [crate_logistic] call KAT_fnc_createCrateSpawn;
 
 // fill editor placed vehicles with loadout
-{
-	if !(isNil str _x) then {
-		private _l = [str _x] call KAT_fnc_getLoadoutName;
-		[_x, _l] call KAT_fnc_applyVehicleLoadout;
-	};
-} count entities [["Helicopter", "Plane", "Tank", "Car", "Ship", "ReammoBox_F"], []];
+[{
+	{
+		if !(isNil str _x) then {
+			private _l = [str _x] call KAT_fnc_getLoadoutName;
+			[_x, _l] call KAT_fnc_applyVehicleLoadout;
+		};
+	} count entities [["Helicopter", "Plane", "Tank", "Car", "Ship", "ReammoBox_F"], []];
+}, [], 5] call CBA_fnc_waitAndExecute;

@@ -26,7 +26,7 @@ private _spark = selectRandom ["spark1","spark2","spark3","spark4","spark5", "sp
 		["_sleep", 0.2, [0]],
 		["_spark", "spark1", [""]]
 	];
-	private _particle = "#particlesource" createVehicleLocal (getPosATL _object); // particle vehicle
+	private _particle = "#particlesource" createVehicle (getPosATL _object); // particle vehicle
 	private _case = round random [1,2,3];
 	switch (_case) do {
 		case 1: {

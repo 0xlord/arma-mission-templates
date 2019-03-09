@@ -37,6 +37,13 @@ for "_i" from 1 to 2 do {
 _player addItemToVest "ACE_RangeCard";
 _player addItemToVest "ACE_ATragMX";
 _player addItemToVest "ACE_Kestrel4500";
+_player addItemToVest "ACE_SpottingScope";
+_player addItemToBackpack "ACE_Tripod";
+_player addItemToBackpack "ACE_DefusalKit";
+_player addItemToBackpack "ACE_EntrenchingTool";
+for "_i" from 1 to 5 do {
+	_player addItemToBackpack "ACE_Sandbag_empty";
+};
 
 /** EARPLUGS */
 _player addItemToUniform "ACE_EarPlugs";
@@ -54,10 +61,18 @@ for "_i" from 1 to 2 do {
 };
 _player addItemToUniform "ACE_morphine";
 
+for "_i" from 1 to 10 do {
+	_player addItemToBackpack "ACE_epinephrine";
+	_player addItemToBackpack "ACE_morphine";
+};
+for "_i" from 1 to 6 do {
+	_player addItemToBackpack "ACE_salineIV_500";
+};
+_player addItemToBackpack "ACE_surgicalKit";
+
 /** THROWABLES */
 for "_i" from 1 to 4 do {
 	_player addItemToVest "rhs_mag_an_m8hc";
-	_player addItemToVest "rhs_mag_mk84";
 };
 for "_i" from 1 to 2 do {
 	_player addItemToVest "HandGrenade";
@@ -74,6 +89,9 @@ _player addPrimaryWeaponItem "hlc_muzzle_556NATO_rotexiiic_grey";
 
 for "_i" from 1 to 6 do {
 	_player addItemToVest "rhs_mag_30Rnd_556x45_M855A1_PMAG";
+};
+for "_i" from 1 to 4 do {
+	_player addItemToBackpack "rhsusf_5Rnd_762x51_AICS_m62_Mag";
 };
 
 /** NIGHT FIGHT STUFF */

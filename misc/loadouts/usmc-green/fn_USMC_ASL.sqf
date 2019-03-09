@@ -56,9 +56,9 @@ _player addItemToUniform "ACE_morphine";
 for "_i" from 1 to 2 do {
 	_player addItemToVest "rhs_mag_an_m8hc";
 	_player addItemToVest "rhs_mag_mk84";
-	_player addItemToVest "rhs_mag_m18_green";
-	_player addItemToVest "rhs_mag_m18_purple";
 };
+_player addItemToVest "rhs_mag_m18_green";
+_player addItemToVest "rhs_mag_m18_purple";
 for "_i" from 1 to 2 do {
 	_player addItemToVest "HandGrenade";
 };

@@ -1,6 +1,6 @@
 /*
  * Author: Katalam
- * Loadout - USMC: Fire Team Leader
+ * Loadout - USMC: Platoon Medic
  */
 params [
 	["_player", objNull, [objNull]],
@@ -8,11 +8,11 @@ params [
 ];
 
 /** VARIABLES */
-_player setVariable ["ACE_medical_medicClass", 0, true];
+_player setVariable ["ACE_medical_medicClass", 2, true];
 _player setVariable ["ACE_GForceCoef", 0.7, true];
 _player setVariable ["ACE_isEngineer", 0, true];
 _player setVariable ["ACE_isEOD", false, true];
-_player setVariable ["KAT_loadout", "USMC_FTL", true];
+_player setVariable ["KAT_loadout", "USMC_MED_LEAD", true];
 
 _player setUnitRank "CORPORAL";
 
@@ -20,15 +20,14 @@ _player setUnitRank "CORPORAL";
 _player forceAddUniform "rhs_uniform_FROG01_wd";
 _player addVest "VSM_RAV_operator_OGA";
 _player addHeadgear "rhsusf_lwh_helmet_marpatwd";
-//_player addBackpackGlobal "VSM_OGA_Backpack_Compact";
-_player addGoggles "rhs_googles_clear";
+_player addBackpackGlobal "VSM_OGA_Backpack_Kitbag";
 
 /** COMMS */
 _player linkItem "ItemMap";
 _player linkItem "ItemCompass";
 _player linkItem "ItemWatch";
 _player linkItem "TFAR_anprc152";
-_player linkItem "ItemAndroid";
+_player linkItem "ItemMicroDAGR";
 _player addWeapon "Binocular";
 _player addItemToUniform "ACE_MapTools";
 _player addItemToUniform "ACE_microDAGR";
@@ -40,27 +39,34 @@ for "_i" from 1 to 2 do {
 _player addItemToUniform "ACE_EarPlugs";
 
 /** MEDICAL */
-for "_i" from 1 to 8 do {
-	_player addItemToUniform "ACE_packingBandage";
+for "_i" from 1 to 48 do {
+	_player addItemToBackpack "ACE_packingBandage";
+	_player addItemToBackpack "ACE_elasticBandage";
 };
-for "_i" from 1 to 5 do {
-	_player addItemToUniform "ACE_elasticBandage";
+for "_i" from 1 to 10 do {
+	_player addItemToBackpack "ACE_morphine";
 };
-for "_i" from 1 to 2 do {
-	_player addItemToUniform "ACE_tourniquet";
-	_player addItemToUniform "adv_aceSplint_splint";
+for "_i" from 1 to 16 do {
+	_player addItemToUniform "ACE_epinephrine";
 };
-_player addItemToUniform "ACE_morphine";
+_player addItemToVest "adv_aceCPR_AED";
+_player addItemToVest "ACE_surgicalKit";
+for "_i" from 1 to 12 do {
+	_player addItemToBackpack "ACE_plasmaIV_500";
+};
+for "_i" from 1 to 4 do {
+	_player addItemToBackpack "ACE_tourniquet";
+};
+for "_i" from 1 to 15 do {
+	_player addItemToBackpack "adv_aceSplint_splint";
+};
 
 /** THROWABLES */
-for "_i" from 1 to 2 do {
+for "_i" from 1 to 4 do {
 	_player addItemToVest "rhs_mag_an_m8hc";
-	_player addItemToVest "rhs_mag_mk84";
-	_player addItemToVest "rhs_mag_m18_green";
 };
-_player addItemToVest "rhs_mag_m18_purple";
 for "_i" from 1 to 2 do {
-	_player addItemToVest "HandGrenade";
+	_player addItemToVest "rhs_mag_m18_green";
 };
 
 /** PRIMARY */
@@ -71,10 +77,9 @@ _player addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk_light";
 _player addPrimaryWeaponItem "rhsusf_acc_acog";
 _player addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
 
-for "_i" from 1 to 9 do {
+for "_i" from 1 to 6 do {
 	_player addItemToVest "rhs_mag_30Rnd_556x45_M855A1_PMAG";
 };
-_player addItemToUniform "rhs_mag_30Rnd_556x45_M855A1_PMAG";
 
 /** NIGHT FIGHT STUFF */
 if (_gearlevel) then {

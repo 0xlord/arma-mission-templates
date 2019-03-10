@@ -20,7 +20,7 @@
 
 	switch (groupId (group player)) do {
 		case "Warrior 1": {
-			[(call TFAR_fnc_activeSwRadio), "111"] call TFAR_fnc_setSwFrequency;
+			[(call TFAR_fnc_activeSwRadio), "110"] call TFAR_fnc_setSwFrequency;
 		};
 		case "Warrior 1-1": {
 			[(call TFAR_fnc_activeSwRadio), "111"] call TFAR_fnc_setSwFrequency;

@@ -340,13 +340,6 @@ force grad_trenches_functions_smallEnvelopeDigTime = 30;
 force grad_trenches_functions_stopBuildingAtFatigueMax = true;
 force grad_trenches_functions_vehicleEnvelopeDigTime = 120;
 
-// MRHSatellite Options
-force MRH_SAT_allowFullscreen = true;
-force MRH_SAT_allowLasering = true;
-force MRH_SAT_allowTargetDetection = true;
-force MRH_SAT_allowTargetTracking = true;
-force MRH_SAT_MaxSatAltitude = 300;
-
 // NIArms
 force niarms_magSwitch = true;
 

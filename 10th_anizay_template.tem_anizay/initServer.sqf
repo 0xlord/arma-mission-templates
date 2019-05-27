@@ -3,11 +3,10 @@
  * Initialises the server side.
  */
 
-// override independent friend
-west setFriend [resistance, 0];
-resistance setFriend [west, 0];
-resistance setFriend [east, 0];
-east setFriend [resistance, 0];
+//Removes corpse after disconnect.
+addMissionEventHandler ["HandleDisconnect", {
+    deleteVehicle (_this select 0);
+}];
 
 // set time and weather
 setDate [2035, 6, 24, 9, 0]; // year, month, day, hour, minute

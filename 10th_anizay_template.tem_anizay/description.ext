@@ -1,4 +1,5 @@
-﻿/*
+#include "script_component.hpp"
+/*
  * Author: Katalam
  */
 
@@ -28,14 +29,10 @@ minPlayerDistance = 75;
 class Header {
 	gameType = Coop;
 	minPlayers = 2;
-	maxPlayers = 104;
+	maxPlayers = 107;
 };
 
-class CfgFunctions {
-    class KAT {
-		#include "functions\template_general\CfgFunctions.hpp"
-	};
-};
+#include "CfgFunctions.hpp"
 
 class CfgRemoteExec {
 	class Commands {

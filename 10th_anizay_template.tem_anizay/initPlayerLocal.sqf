@@ -1,10 +1,9 @@
+#include "script_component.hpp"
 ﻿/*
  * Author: Katalam
  * Initialises the client side.
  */
 
-
-// read and prepare available loadouts
 
 waitUntil {player == player};
 
@@ -12,11 +11,11 @@ player unlinkItem "ItemRadio";
 
 // disable arma voice chat
 player setVariable ["BIS_noCoreConversations", true];
-[] call KAT_fnc_spawnProtection;
+[] call KATFUNC(common,spawnProtection);
 
 [bin, 0, ["ACE_MainActions"],
-	["emptyBin", "Mülleimer leeren", "", {[bin] call kat_10thMods_faction_generic_fnc_clearVehicleLoadout}, {alive bin}] call ace_interact_menu_fnc_createAction
-] call ace_interact_menu_fnc_addActionToObject;
+	["emptyBin", "Mülleimer leeren", "", {[bin] call KATFUNC(faction_generic,clearVehicleLoadout);}, {alive bin}] call ACEFUNC(interact_menu,createAction)
+] call ACEFUNC(interact_menu,addActionToObject);
 
 // create briefing from the bottom up
 if (typeOf player in ["kat_10thMods_faction_generic_USAM_ADM", "kat_10thMods_faction_generic_USAM_PTL"]) then {
@@ -28,4 +27,4 @@ if (typeOf player in ["kat_10thMods_faction_generic_USAM_ADM", "kat_10thMods_fac
 	<execute expression='KAT_spawnProtection = true'>Spawnprotection entfernen</execute>"]];
 };
 
-[player, currentWeapon player, currentMuzzle player] call ace_safemode_fnc_lockSafety;
+[player, currentWeapon player, currentMuzzle player] call ACEFUNC(safemode,lockSafety);

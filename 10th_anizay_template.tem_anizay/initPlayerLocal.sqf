@@ -1,13 +1,8 @@
 #include "script_component.hpp"
-﻿/*
+/*
  * Author: Katalam
- * Initialises the client side.
+ * Intialize player side.
  */
-
-
-waitUntil {player == player};
-
-player unlinkItem "ItemRadio";
 
 // disable arma voice chat
 player setVariable ["BIS_noCoreConversations", true];
@@ -18,7 +13,8 @@ player setVariable ["BIS_noCoreConversations", true];
 ] call ACEFUNC(interact_menu,addActionToObject);
 
 // create briefing from the bottom up
-if (typeOf player in ["kat_10thMods_faction_generic_USAM_ADM", "kat_10thMods_faction_generic_USAM_PTL"]) then {
+
+if (typeOf player in [QKATGVAR(faction_generic,USAM_ADM), QKATGVAR(faction_generic,USAM_PTL)]) then {
 	player createDiaryRecord ["Diary", ["Scripte", "
 	Probleme beheben:<br/><br/>
 	<execute expression='[player] call kat_10thmods_common_fnc_createZeus'>Create Zeus</execute><br/><br/>

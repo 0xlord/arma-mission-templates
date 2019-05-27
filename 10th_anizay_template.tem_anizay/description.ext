@@ -7,7 +7,7 @@ author = "A.Katalam & B.Miller"; // mission author
 OnLoadName = "Template Anizay"; // mission title
 
 // choose-mission-screen description
-overviewText = "Missionstemplate für US Army: 10-Mann-Riflesquads, Weapon Teams, Logistik, Helikopter- und Kampfpanzerbesatzung und Zeus. KAT_template - Version: 1.5 vom: 22.04.2019";
+overviewText = "Missionstemplate für US Army: 10-Mann-Riflesquads, Weapon Teams, Logistik, Helikopter- und Kampfpanzerbesatzung und Zeus. KAT_template - Version: 2.0 vom: 27.05.2019";
 
 onLoadMission = "Viel Spaß!";
 //loadScreen = "logo.paa";

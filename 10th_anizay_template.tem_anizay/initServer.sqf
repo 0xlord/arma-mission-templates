@@ -1,4 +1,5 @@
-﻿/*
+#include "script_component.hpp"
+/*
  * Author: Katalam
  * Initialises the server side.
  */

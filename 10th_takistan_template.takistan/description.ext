@@ -1,4 +1,3 @@
-#include "script_component.hpp"
 /*
  * Author: Katalam
  */
@@ -7,7 +6,7 @@ author = "A.Katalam & B.Miller"; // mission author
 OnLoadName = "Template Takistan"; // mission title
 
 // choose-mission-screen description
-overviewText = "Missionstemplate für US Army && US Marines: 10-Mann-Riflesquads, Weapon Teams, Logistik, Helikopter- und Kampfpanzerbesatzung und Zeus. KAT_template - Version: 2.1 vom: 04.06.2019";
+overviewText = "Missionstemplate für US Army &amp;&amp; US Marines: 10-Mann-Riflesquads, Weapon Teams, Logistik, Helikopter- und Kampfpanzerbesatzung und Zeus. KAT_template - Version: 2.1 vom: 04.06.2019";
 
 onLoadMission = "Viel Spaß!";
 //loadScreen = "logo.paa";

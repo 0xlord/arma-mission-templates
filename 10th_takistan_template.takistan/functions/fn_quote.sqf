@@ -7,7 +7,7 @@
  * None
  *
  * Return Value:
- * 0: "%1" <STRING>
+ * 0: "KAT_template_%1" <STRING>
  *
  * Example:
  * [] call KAT_template_fnc_quote;
@@ -15,4 +15,4 @@
  * Public: No
  */
 
-QUOTE(%1);
+QGVAR(%1);

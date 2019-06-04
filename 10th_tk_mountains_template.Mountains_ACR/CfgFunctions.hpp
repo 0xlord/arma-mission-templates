@@ -1,6 +1,6 @@
 class CfgFunctions {
-    class ADDON {
-        tag = QUOTE(ADDON);
+    class KAT_template {
+        tag = "KAT_template";
         class functions {
             file = "functions";
             class quote;

@@ -6,5 +6,5 @@ class CfgFunctions {
             class quote;
             class true;
         };
-	};
+    };
 };

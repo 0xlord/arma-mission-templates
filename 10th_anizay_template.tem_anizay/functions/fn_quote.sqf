@@ -1,18 +1,18 @@
 #include "..\script_component.hpp"
 /*
  * Author: Katalam
- * Returns true.
+ * Returns a %1 string.
  *
  * Arguments:
  * None
  *
  * Return Value:
- * 0: True <BOOLEAN>
+ * 0: "%1" <STRING>
  *
  * Example:
- * [] call KAT_template_fnc_true;
+ * [] call KAT_template_fnc_quote;
  *
  * Public: No
  */
 
-true;
+QUOTE(%1);

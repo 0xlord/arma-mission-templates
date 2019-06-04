@@ -12,7 +12,7 @@
 #include "\x\cba\addons\main\script_macros_mission.hpp"
 
 // Map
-#define MAP Anizay
+#define MAP Takistan-Mountains
 #define TEMPLATE QUOTE(Template MAP)
 
 #define PATHTOKATF(var1,var2) PATHTOF_SYS(\x\kat_10thmods\addons,var1,var2)

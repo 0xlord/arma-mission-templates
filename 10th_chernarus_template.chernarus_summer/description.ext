@@ -1,12 +1,13 @@
-﻿/*
+#include "script_component.hpp"
+/*
  * Author: Katalam
  */
 
 author = "A.Katalam & B.Miller"; // mission author
-OnLoadName = "Template Anizay"; // mission title
+OnLoadName = "Template Chernarus"; // mission title
 
 // choose-mission-screen description
-overviewText = "Missionstemplate für US Army: 10-Mann-Riflesquads, Weapon Teams, Logistik, Helikopter- und Kampfpanzerbesatzung und Zeus. KAT_template - Version: 1.6 vom: 25.04.2019";
+overviewText = "Missionstemplate für US Army && US Marines: 10-Mann-Riflesquads, Weapon Teams, Logistik, Helikopter- und Kampfpanzerbesatzung und Zeus. KAT_template - Version: 2.1 vom: 04.06.2019";
 
 onLoadMission = "Viel Spaß!";
 //loadScreen = "logo.paa";
@@ -28,14 +29,10 @@ minPlayerDistance = 75;
 class Header {
 	gameType = Coop;
 	minPlayers = 2;
-	maxPlayers = 101;
+	maxPlayers = 106; // headless clients count too
 };
 
-class CfgFunctions {
-    class KAT {
-		#include "functions\template_general\CfgFunctions.hpp"
-	};
-};
+#include "CfgFunctions.hpp"
 
 class CfgRemoteExec {
 	class Commands {

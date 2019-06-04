@@ -1,4 +1,5 @@
-﻿/*
+#include "script_component.hpp"
+/*
  * Author: Katalam
  */
 
@@ -6,7 +7,7 @@ author = "A.Katalam & B.Miller"; // mission author
 OnLoadName = "Template Rosche"; // mission title
 
 // choose-mission-screen description
-overviewText = "Missionstemplate für US Army: 10-Mann-Riflesquads, Weapon Teams, Logistik, Helikopter- und Kampfpanzerbesatzung und Zeus. KAT_template - Version: 1.3 vom: 09.03.2019";
+overviewText = "Missionstemplate für US Army && US Marines: 10-Mann-Riflesquads, Weapon Teams, Logistik, Helikopter- und Kampfpanzerbesatzung und Zeus. KAT_template - Version: 2.1 vom: 04.06.2019";
 
 onLoadMission = "Viel Spaß!";
 //loadScreen = "logo.paa";
@@ -28,16 +29,10 @@ minPlayerDistance = 75;
 class Header {
 	gameType = Coop;
 	minPlayers = 2;
-	maxPlayers = 99;
+	maxPlayers = 106; // headless clients count too
 };
 
-class CfgFunctions {
-    class KAT {
-		#include "functions\template_general\CfgFunctions.hpp"
-		#include "functions\template_loadout\CfgFunctions.hpp"
-	};
-	#include "functions\loadouts\CfgFunctions.hpp"
-};
+#include "CfgFunctions.hpp"
 
 class CfgRemoteExec {
 	class Commands {
@@ -46,26 +41,5 @@ class CfgRemoteExec {
 	class Functions {
 		mode = 2;
 		jip = 1;
-	};
-};
-
-class Params {
-	class Daytime {
-		title = "Uhrzeit";
-		texts[] = {"3 Uhr", "6 Uhr", "9 Uhr", "12 Uhr", "15 Uhr", "18 Uhr", "21 Uhr", "24 Uhr"};
-		values[] = {3, 6, 9, 12, 15, 18, 21, 0};
-		default = 9;
-	};
-	class Weather {
-		title = "Wetterlage";
-		texts[] = {"Klarer Himmel", "Leichte Bewölkung", "Starke Bewölkung"};
-		values[] = {0, 3, 7};
-		default = 3;
-	};
-	class OverrideIndependentFriendship {
-		title = "Beziehung von Independent zu Bluefor bzw. Opfor überschreiben?";
-		texts[] = {"Beziehungen nicht überschreiben (wie im Editor eingestellt)", "Independent ist feindlich", "Independent mit Bluefor gegen Opfor", "Independent mit Opfor gegen Bluefor"};
-		values[] = {0, 1, 2, 3};
-		default = 1;
 	};
 };

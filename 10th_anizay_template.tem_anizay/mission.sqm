@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1842;
+		nextID=1843;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=309;
+		nextID=319;
 	};
 	class Camera
 	{
-		pos[]={8518.6084,193.4044,7025.7778};
-		dir[]={-0.73140341,-0.67967385,-0.057786334};
-		up[]={-0.67763674,0.73343712,-0.05354261};
-		aside[]={-0.078771681,-1.2347555e-006,0.99701458};
+		pos[]={8340.123,143.32597,7043.3052};
+		dir[]={-0.55485469,-0.79602981,-0.24234048};
+		up[]={-0.72951478,0.60520399,-0.31862959};
+		aside[]={-0.40030268,-1.2500095e-006,0.91651744};
 	};
 };
 binarizationWanted=0;
@@ -64,7 +64,7 @@ addons[]=
 	"A3_Signs_F_Signs_Ad",
 	"A3_Structures_F_Civ_InfoBoards",
 	"A3_Structures_F_EPA_Civ_Camping",
-	"A3_Structures_F_Heli_Items_Luggage",
+	"A3_Structures_F_Heli_Civ_Garbage",
 	"A3_Structures_F_Mil_Flags",
 	"A3_Props_F_Exp_Military_Camps",
 	"kat_10thmods_common",
@@ -2750,48 +2750,6 @@ class Mission
 						};
 						class Item18
 						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={8307.2939,111.69666,7029.854};
-								angles[]={0,3.4466064,0};
-							};
-							side="Empty";
-							flags=4;
-							class Attributes
-							{
-								init="call{[this, false] call ace_dragging_fnc_setDraggable;" \n "[this, false] call ace_dragging_fnc_setCarryable;}";
-								name="bin";
-							};
-							id=986;
-							type="Land_PlasticCase_01_small_F";
-							atlOffset=7.6293945e-006;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="Enh_featureType";
-									expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-								};
-								nAttributes=1;
-							};
-						};
-						class Item19
-						{
 							dataType="Logic";
 							class PositionInfo
 							{
@@ -2802,7 +2760,7 @@ class Mission
 							type="kat_10thmods_faction_generic_moduleAddLoadoutMenu3den";
 							atlOffset=-7.6293945e-006;
 						};
-						class Item20
+						class Item19
 						{
 							dataType="Object";
 							class PositionInfo
@@ -2862,7 +2820,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item21
+						class Item20
 						{
 							dataType="Object";
 							class PositionInfo
@@ -2903,7 +2861,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item22
+						class Item21
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -2913,9 +2871,67 @@ class Mission
 							id=1835;
 							type="kat_10thmods_faction_moduleAddLoadoutMenu3den";
 						};
+						class Item22
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={8308.1113,112.05694,7029.1602};
+								angles[]={-0,4.817266,0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+							};
+							id=1842;
+							type="Land_WheelieBin_01_F";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="Enh_featureType";
+									expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="0";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
 					};
 					id=990;
-					atlOffset=-0.074378967;
+					atlOffset=-0.037193298;
 				};
 				class Item4
 				{
@@ -5590,7 +5606,7 @@ class Mission
 				};
 			};
 			id=2;
-			atlOffset=1.5472336;
+			atlOffset=1.5475235;
 		};
 		class Item1
 		{

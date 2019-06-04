@@ -29,7 +29,7 @@ minPlayerDistance = 75;
 class Header {
 	gameType = Coop;
 	minPlayers = 2;
-	maxPlayers = 107; // headless clients count too
+	maxPlayers = 106; // headless clients count too
 };
 
 #include "CfgFunctions.hpp"
